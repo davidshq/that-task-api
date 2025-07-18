@@ -17,6 +17,8 @@ I eventually intend to build a UI, but it may not work for you. It will certainl
 ## Kanban
 ### Resources
 - https://www.g2.com/categories/kanban-project-management
+- Trello
+- Kanboard
 
 ## Collaboration
 ### Resources
@@ -49,3 +51,31 @@ I eventually intend to build a UI, but it may not work for you. It will certainl
 ## Holistic Wellbeing
 ### Resources
 - Finch
+
+## Dashboard
+### Resources
+- xTiles
+
+## Simplicity
+### Resources
+- Google Keep
+
+## Gantt
+
+## Calendar
+### Resources
+- Google Calendar
+
+## Time Tracking
+### Resources
+- Toggl
+
+## Project Management
+### Resources
+- Microsoft Project
+- OpenProject
+- Teamwork
+
+## Customizable
+### Resources
+- Smartsheet
