@@ -79,3 +79,19 @@ I eventually intend to build a UI, but it may not work for you. It will certainl
 ## Customizable
 ### Resources
 - Smartsheet
+
+## CLI/TUI
+- [TaskWarrior](https://taskwarrior.org/)
+  
+  - TUIs
+    - [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui) - Stars: 1.7k - Updated: 6/2025
+    - [vit](https://github.com/vit-project/vit) - Stars: 530 - Updated: 6/2025 - curses-based TUI.
+    - [vim-taskwarrior](https://github.com/blindFS/vim-taskwarrior) - Stars: 524
+  - Web UI
+    - [taskwarrior-webui](https://github.com/DCsunset/taskwarrior-webui) - Stars: 230 - Updated: 12/2024
+  - Mobile UI
+    - [taskwarrior-flutter](https://github.com/CCExtractor/taskwarrior-flutter) - Stars: 185 - Updated: 7/2025
+
+## Gamification
+### Resources
+- Habitica
