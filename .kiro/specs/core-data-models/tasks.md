@@ -13,14 +13,14 @@
   - Create database triggers for updated_at timestamps
   - _Requirements: 1.1, 1.3_
 
-- [ ] 2.2 Create lists table with hierarchical support
+- [x] 2.2 Create lists table with hierarchical support
   - Write SQL migration for lists table with parent_id self-reference
   - Add check constraints for type validation
   - Implement RLS policies for list access control
   - Create indexes for efficient hierarchical queries
   - _Requirements: 2.1, 2.2, 2.3, 2.5_
 
-- [ ] 2.3 Create tasks table with rich metadata
+- [x] 2.3 Create tasks table with rich metadata
   - Write SQL migration for tasks table with all required fields
   - Add check constraints for status and priority validation
   - Implement foreign key relationships to lists and users
