@@ -27,13 +27,13 @@
   - Create RLS policies for task access control
   - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8_
 
-- [ ] 2.4 Create custom field definitions table
+- [x] 2.4 Create custom field definitions table
   - Write SQL migration for custom_field_definitions table
   - Add check constraints for field_type and entity_type validation
   - Implement RLS policies for custom field definition access
   - _Requirements: 4.1, 4.2_
 
-- [ ] 2.5 Create audit log table and triggers
+- [x] 2.5 Create audit log table and triggers
   - Write SQL migration for audit_logs table
   - Create database triggers for automatic audit logging on all tables
   - Implement trigger functions to capture before/after values
