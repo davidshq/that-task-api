@@ -7,7 +7,7 @@
   - _Requirements: 6.1, 6.2_
 
 - [ ] 2. Create core database schema and migrations
-- [ ] 2.1 Create user profiles table and RLS policies
+- [x] 2.1 Create user profiles table and RLS policies
   - Write SQL migration for user_profiles table extending auth.users
   - Implement Row Level Security policies for user profile access
   - Create database triggers for updated_at timestamps
