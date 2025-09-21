@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "name": "Database Test Runner",
+  "description": "Automatically runs the relevant test suite when SQL or TypeScript test files are saved. For SQL files, suggests pgTAP test commands. For TypeScript files, runs API integration tests and reports results.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "tests/**/*.sql",
+      "tests/**/*.test.ts"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run the relevant test suite for this file. For SQL files, suggest pgTAP test commands. For TypeScript files, run API integration tests and report results."
+  }
+}

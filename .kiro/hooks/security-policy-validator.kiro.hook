@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "name": "Security Policy Validator",
+  "description": "Automatically reviews Row Level Security (RLS) policies and security-related SQL code when files are saved, checking for syntax correctness, security vulnerabilities, access control logic issues, and potential bypasses",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*policy*.sql",
+      "**/*rls*.sql"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review this RLS policy or security-related code for: 1) Syntax correctness, 2) Security vulnerabilities, 3) Access control logic, 4) Potential bypasses. Suggest improvements."
+  }
+}

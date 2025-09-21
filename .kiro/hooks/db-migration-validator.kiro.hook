@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Database Migration Validator",
+  "description": "Validates SQL migration files for syntax errors, checks for potential issues, and suggests improvements when migration files are saved",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "supabase/migrations/*.sql"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Validate this SQL migration file for syntax errors, check for potential issues, and suggest improvements. If valid, remind me to run supabase db reset to apply changes locally."
+  }
+}

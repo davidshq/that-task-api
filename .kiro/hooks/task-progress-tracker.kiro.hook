@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Task Progress Tracker",
+  "description": "Monitors task specification files for changes and analyzes task completion status, suggesting next logical tasks and checking dependencies when files are saved.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      ".kiro/specs/**/tasks.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Check task completion status in this spec file. Identify completed tasks, suggest next logical tasks to work on, and check for any dependencies."
+  }
+}

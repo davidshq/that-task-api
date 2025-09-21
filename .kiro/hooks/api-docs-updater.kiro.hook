@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "API Docs Updater",
+  "description": "Monitors SQL migration files and triggers a review to determine if API documentation needs updates when database schema changes are detected",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "supabase/migrations/*.sql"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Database schema changed. Review if API documentation needs updates. Check if new endpoints were created or existing ones modified, and suggest documentation updates."
+  }
+}

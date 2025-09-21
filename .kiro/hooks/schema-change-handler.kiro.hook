@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Schema Change Handler",
+  "description": "Monitors Supabase migration files for changes and triggers validation of TypeScript types, RLS policies, and API documentation updates",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "supabase/migrations/*.sql"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A database schema change was detected. Please: 1) Check if TypeScript types need updating, 2) Validate any affected RLS policies, 3) Suggest updates to API documentation if needed."
+  }
+}

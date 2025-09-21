@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Edge Function Validator",
+  "description": "Automatically validates Supabase Edge Functions for TypeScript syntax, best practices, error handling, and performance considerations when TypeScript files are saved in the functions directory",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "supabase/functions/**/*.ts"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Validate this Edge Function for: 1) TypeScript syntax, 2) Supabase Edge Function best practices, 3) Error handling, 4) Performance considerations. Suggest testing approach."
+  }
+}

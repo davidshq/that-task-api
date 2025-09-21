@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "name": "Performance Analyzer",
+  "description": "Analyzes database schema and queries for performance issues including missing indexes, N+1 query problems, and optimization opportunities",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.sql",
+      "**/migrations/*.sql",
+      "**/schema.sql",
+      "**/queries/*.sql",
+      "supabase/migrations/*.sql"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Analyze the current database schema and queries for performance issues. Check for missing indexes, N+1 query problems, and suggest optimizations."
+  }
+}

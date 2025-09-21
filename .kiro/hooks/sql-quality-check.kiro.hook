@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "SQL Quality Check",
+  "description": "Automatically reviews SQL files for syntax errors, performance issues, PostgreSQL best practices, and security concerns when saved",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.sql"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review this SQL code for: 1) Syntax errors, 2) Performance issues, 3) PostgreSQL best practices, 4) Security concerns. Provide specific suggestions for improvements."
+  }
+}

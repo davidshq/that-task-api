@@ -1,0 +1,32 @@
+{
+  "name": "that-task-api",
+  "version": "1.0.0",
+  "description": "There are a bazillion task / project management apps out there and I've used a wide variety of them and none does what I want the way I want.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "supabase": "supabase",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:reset": "supabase db reset",
+    "db:status": "supabase status"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DAVIDSHQ/that-task-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DAVIDSHQ/that-task-api/issues"
+  },
+  "homepage": "https://github.com/DAVIDSHQ/that-task-api#readme",
+  "devDependencies": {
+    "supabase": "^2.40.7"
+  }
+}

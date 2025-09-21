@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Database Backup Manager",
+  "description": "Provides guidance for creating database backups using Supabase CLI, including necessary commands and backup verification procedures for the task management system",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "supabase/migrations/*.sql",
+      "supabase/config.toml",
+      ".env*",
+      "README.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Guide me through creating a database backup using Supabase CLI. Provide the necessary commands and verify backup procedures."
+  }
+}
